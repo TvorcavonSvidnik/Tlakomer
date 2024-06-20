@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="https://img.freepik.com/free-vector/heartbeat-line-design_25030-68490.jpg?w=900&t=st=1717239444~exp=1717240044~hmac=290bea51854f1f29133977b403a984337f67a6098a416918d9eb17dc8a684064">
+    <title>Aký mám tlak?</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="oprava.css">
+
+</head>
+<body>
+    <form id="my_form" action="">
+        
+        <div class="bpmeter">
+
+            <label for="systolic" class="labels">SYS:</label>
+            <input type="number" class="bpinputs" id="systolic" title="Systolický tlak v mmHg" value="120" min="0" max="300" required><br>
+            
+            <label for="diastolic" class="labels">DIA:</label>
+            <input type="number" class="bpinputs" id="diastolic" title="Diastolický tlak v mmHg" value="80" min="0" max="300" required><br>
+            
+            <label for="age" class="labels">Vek:</label>
+            <input type="number" class="bpinputs" id="age" alt="Váš vek" min="1" max="135" value="18" required><br>
+
+            <a href="https://tlakomery.heureka.sk/">
+            <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" id="shop" alt="Kde kúpiť?" title="Kde kúpiť tlakomer?">
+            </a>
+
+            <label for="reset" id="resetlabel"></label>
+            <button type="reset" id="reset"><img src="https://static.thenounproject.com/png/904768-200.png" height="52" alt="Reset" title="RESET"></button>
+            
+            <label for="man" class="genders">MUŽ
+                <input type="radio" id="man" value="man" name="gender" required>
+                <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Male_symbol_-_black.png" alt="MUŽ" height="20">
+            </label> -->
+
+            <label for="woman" class="genders">ŽENA
+                <input type="radio" id="woman" value="woman" name="gender" required>
+                <!-- <img src="https://static.thenounproject.com/png/579658-200.png" alt="ŹENA" height="20"> -->
+            </label>
+            
+            <button type="submit" id="submit" title="Výpočet tlaku.">Aký mám tlak?</button>
+
+        </div>
+        <div class="infotext">
+            <p>UPOZORNENIE: Všetky inforácie na stránke majú len <b><u>informatívny charakter!!</u></b> Pre vhodnejší spôsob úpravy Vášho krvného tlaku sa poraďte so svojím lekárom!</p>
+            <p><b>Systolický tlak</b> (SYS) je tlak, nameraný v krvnom obehu počas srdcovej kontrakcie (systoly), kedy sa vypudzuje krv zo srdca do krvého obehu. Moment, kedy sa srdce stlačí. Ide o vrchnú hodnotu na prístroji.</p>
+            <p><b>Diastolický tlak</b> (DIA) je tlak, nameraný keď sa srdce uvoľní a opäť sa naplní krvou. Moment kedy je srdce v pokoji pred stlačením. Ide o hodnotu nachádzajúcu sa nad pulzom.</p>
+            </r><p>Rozdiel medzi týmito tlakmi sa nazýva <b>pulzný tlak</b>.</p>
+            <p>V prípade zmerania tlaku <u><i>u ľudí mladších ako 18 rokov</u></i>, nie je podstatné či označíte "MUŽ" alebo "ŽENA".</p>
+            <p id="outcome"></p>
+            <p id="pulsepressure"></p>
+            <p id="achievement"></p>
+        
+        </div>
+        <div class="outComeText">
+
+            <div id="highBP">
+            <p>V prípade vysokého krvného tlaku môžete pociťovať:
+            <ul>
+                <li>- krvácanie nosu,</li>
+                <li>- bolesť hlavy,</li>
+                <li>- bolešt na hrudi,</li>
+                <li>- slabší dych,</li>
+                <li>- rozmazané videnie,</li>
+                <li>- nevoľnosť</li>
+            </ul>
+                Vysoký krvný tlak <u>(hypertenzia)</u> sa zisťuje náročnejšie oproti nízkemu krvnému tlaku. Pri hyptertenzii
+                sa symptómy väčšínou neukážu a vy to nepociťujete. S pribúdajúcim vekom riziko vysokého krvného tlaku stúpa
+                a stáva a pri opakovanej hypertenzii sa z neho <b><i>"tichý zabiják"</i></b>. Pravidelným meraním môžete zistiť či trpíte hypertenziou a predísť tak 
+                <a href="https://www.krvny-tlak.sk/preco-je-vysoky-tlak-nebezpecny" title="Možné riziká"> niektorým nebezpečenstvám</a>. 
+                Najlepšie je vždy Váš krvný tlak prediskutovať s lekárom, ktorý Vám poradí, prípadne nasadí liečbu.
+                <br><br>Ak chcete znížiť vysoký krvný tlak:
+            <ul>
+                <a href="https://www.genovital.sk/clanok/126/vysoky-krvny-tlak--tipy-pre-stravovanie.html" title="Ako si upraviť stravu?">
+                <li>- upravte si stravu</li></a> 
+                    <ul>
+                        <li>- jedzte jedlá ktoré nie sú mastné,</li>
+                        <li>- obmedzte častú konzumáciu mäsa,</li>
+                        <li>- obmedzte príjem cukru,</li>
+                        <li>- vyskúšajte cesnak,</li>
+                        <li>- zvýšte príjem draslíka,</li>
+                        <li>- doprajte si horkej čokolády > 60%</li>
+                        
+                </ul>
+                <a href="https://gymbeam.sk/blog/8-tipov-ako-trenovat-ked-nic-nestihate/" title="Ako cvičiť bez fitka?">  
+                <li>- cvičte,</li></a>
+
+                <a href="https://aktin.sk/ako-schudnut-efektivne-a-bez-diet-10-tipov-na-prirodzenu-stratu-hmotnosti" title="Ako schdudnúť?">  
+                <li>- schudnite,</li></a>
+
+                <a href="https://www.mojalekaren.sk/clanok/odvykanie-od-fajcenia/" title="Ako obmedziť fajćenie?">
+                <li>- presťante s fajčením,</li></a>
+
+                <li>- obmedzte príjem kofeinu a alkoholu,</li>
+                <a href="https://www.substitucna-liecba.sk/novinky/odvykanie-drogovej-zavislosti-pripravte-si-dobru-strategiu-205" title="Ako obmedziť či prestať s drogami?">
+                <li>- neužívajte drogy,</li></a>
+
+                <a href="https://www.union.sk/ako-sa-upokojit-pred-spanim-kvalitny-spanok/" title="Ako si zlepšiť spánok?">
+                <li>- snaže sa o kvalitný spánok,</li></a>
+
+                <a href="https://www.metlife.sk/o-nas/blog/ako-sa-ubranit-stresu/" title="Ako obmedziť stres?">
+                <li>- obmedziť stres</li></a>
+            </ul> 
+                </p>
+            </div>
+
+            <div id="lowBP">
+                <p>
+                V prípade nízkeho krvného tlaku môžete pociťovať:
+                <ul>
+                    <li>- únavu,</li>
+                    <li>- pocit na omdletie,</li>
+                    <li>- točenie v hlave,</li>
+                    <li>- zahmlievanie zraku,</li>
+                    <li>- slabosť,</li>
+                    <li>- spavosť,</li>
+                    <li>- vracanie,</li>
+                    <li>- nevoľnosť</li>
+                </ul>  
+                Najrýchlejší spôsob ako vyrovnať náhly nízky tlak je <b>sadnúť/ľahnúť si</b> (ako osoba preferuje); <b>prijať dostatočné množstvo tekutín</b>; 
+                <b>dýchať stabilne</b> (rovnako dlhý nádych a výdych, nemusí ísť o hlboké dýchanie); <b>vyložiť si nohy nad úroveň brucha.</b><br>
+                Na zmiernenie príznakov pite viac vody, zvýšte príjem soli (avšak s mierou, nakoľko môže prispieť k iným rizikám), pravidelne cvičte,
+                noste <a href="https://www.heureka.sk/?h%5Bfraze%5D=kompresn%C3%A9+pono%C5%BEky" title="Kompresné prvky">kompresné prvky </a>(ponožky, podkolienky, pančuchy).
+                </p>
+            </div>
+
+            <div id="fineBP">
+                <p>
+                    Váš krvný tlak je v hodnote, ktorý by nemal mať významenjší vplyv na Vaše zdravie. Napriek tomu Vám
+                    odporúčame byť naďalej fyzicky aktívny, dobre sa stravovať, nefajčiť, nepiť nadmerné mnoźstvo alkoholu, neužívajť drogy
+                    či iné látky telu neprospešné. Snažte sa vyhýbať stresu a nepríjemných situáciam. Podstatné je, aby ste sa cítili po zdravotnej
+                    stránke čo najviac v poriadku. 
+                    Výkyv Váśho krvného tlaku nemusí nutne znamenať zdravotný problém, môže ísť o dočasný jav, kedy sa 
+                    telo prispôsobuje náhlym zmená (fyzická aktivita, stres, strach, úzkosť, nedostatok tekutín či iných látok v tele). 
+                </p>
+            </div>
+
+            <div id="kidsBP">
+                <p>
+                    Všetky hodnoty krvných tlakov u detí/dospievajúcich sú len informatívne a v prípade podozrenia vplyvu krvného tlaku na zdravie
+                    dieťaťa sa <b>vždy</b> poraďte s lekárom! Rast a hormonálne zmeny, môžu mať silný vplyv na odmerané hodnoty krvného tlaku a preto
+                    neodporúčame začať s obmedzovaním či úpravou životného štýlu, nakoľko je to nutné prebrať s lekárom. Dbajte na prevenciu vo forme 
+                    fyzickej aktivity, zdravej stravy a mentálnej pohody detí či mladistvých.
+                </p>
+            </div>
+
+        </div>
+        
+    </form>
+    <script src="pulse.js"></script>
+</body>
+</html>
