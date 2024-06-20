@@ -3,4 +3,5 @@
 3. Press Ctrl+Shift+X search and install "Live Server" and "GitHub Pull Requests".
 4. Wait for installation to complete.
 5. Press Ctrl+Shift+P and top bar should pop up, write "Git: Clone"
-6. Copy and paste this URL: 
+6. Copy and paste this URL: https://github.com/TvorcavonSvidnik/Tlakomer
+7. When everything loads right-click on "oprava.html" and press "Open with live server"
